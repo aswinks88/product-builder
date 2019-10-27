@@ -165,7 +165,7 @@ jQuery(document).ready(function($){
 		if( model.hasClass('selected') ) {
 			var modelType = model.data('model'),
 				modelImage = model.find('img').attr('src');
-
+            console.log(modelType)
 			//need to update the product image in the bottom fixed navigation
 			this.modelPreview.attr('src', modelImage);
 
@@ -174,9 +174,13 @@ jQuery(document).ready(function($){
 			this.models.siblings('li').remove();
 			//second - load the new content
 			$.ajax({
-		        type       : "GET",
+				type       : "GET",
+				"headers": {
+					"Access-Control-Allow-Origin": "*"
+				},
 		        dataType   : "html",
-		        url        : modelType+".html",
+				url        : `${modelType}.html`,
+				crossDomain: true,
 		        beforeSend : function(){
 		        	self.loaded = false;
 		        	model.siblings().removeClass('loaded');
