@@ -1,7 +1,9 @@
 Product Builder
 =========
+This responsive builder is based on CodyHouse article.
+I have forked this repository to learn and build a configurator of my own.
 
-A customizable and responsive product builder for your online store.
+For more information please follow the below link.
 
 [Article on CodyHouse](https://codyhouse.co/gem/product-builder/)
 
