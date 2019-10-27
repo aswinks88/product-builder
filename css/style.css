@@ -935,10 +935,10 @@ Builder fixed bottom summary
     float: left;
   }
   .cd-builder-footer img {
-    width: 197px;
-    padding-right: 27px;
+    width: 180px;
+    padding-right: 107px;
     margin-right: 27px;
-    border-right: 1px solid #e1e1e1;
+    border-right: 10px solid #e1e1e1;
     -webkit-transition: opacity .2s;
     transition: opacity .2s;
   }
@@ -956,9 +956,9 @@ Builder fixed bottom summary
   }
   .cd-builder-footer.disabled .selected-product {
     /* translateX is equal to img width (197px) + img margin-right (27px) */
-    -webkit-transform: translateX(-224px) translateY(-50%);
-        -ms-transform: translateX(-224px) translateY(-50%);
-            transform: translateX(-224px) translateY(-50%);
+    -webkit-transform: translateX(-207px) translateY(-50%);
+        -ms-transform: translateX(-207px) translateY(-50%);
+            transform: translateX(-207px) translateY(-50%);
   }
   .cd-builder-footer.disabled .selected-product img {
     opacity: 0;
